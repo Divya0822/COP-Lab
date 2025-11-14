@@ -1,3 +1,6 @@
+# https://github.com/Divya0822/COP-Lab
+# Partner 1: Divya Singh
+# Partner 2: Anabel
 import unittest
 from calculator import *
 
@@ -13,6 +16,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(sub(-10,6),-16)
         self.assertEqual(sub(10,-6),16)
 
+    ######### Partner 1
     def test_multiply(self):  
         self.assertEqual(mul(2, 3), 6)
         self.assertEqual(mul(-4, 5), -20)
@@ -36,7 +40,7 @@ class TestCalculator(unittest.TestCase):
         with self.assertRaises(ValueError):
             log(-2,8)
     
-
+    ######### Partner 1
     def test_log_invalid_argument(self): 
         with self.assertRaises(ValueError):
             log(0, 10)
